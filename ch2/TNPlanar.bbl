@@ -1,0 +1,47 @@
+\def\soft#1{\leavevmode\setbox0=\hbox{h}\dimen7=\ht0\advance \dimen7
+  by-1ex\relax\if t#1\relax\rlap{\raise.6\dimen7
+  \hbox{\kern.3ex\char'47}}#1\relax\else\if T#1\relax
+  \rlap{\raise.5\dimen7\hbox{\kern1.3ex\char'47}}#1\relax \else\if
+  d#1\relax\rlap{\raise.5\dimen7\hbox{\kern.9ex \char'47}}#1\relax\else\if
+  D#1\relax\rlap{\raise.5\dimen7 \hbox{\kern1.4ex\char'47}}#1\relax\else\if
+  l#1\relax \rlap{\raise.5\dimen7\hbox{\kern.4ex\char'47}}#1\relax \else\if
+  L#1\relax\rlap{\raise.5\dimen7\hbox{\kern.7ex
+  \char'47}}#1\relax\else\message{accent \string\soft \space #1 not
+  defined!}#1\relax\fi\fi\fi\fi\fi\fi}
+\begin{thebibliography}{1}
+
+\bibitem{GLM05}
+Emilio Di~Giacomo, Giuseppe Liotta, and Henk Meijer.
+\newblock Computing straight-line {3D} grid drawings of graphs in linear
+  volume.
+\newblock {\em Comput. Geom. Theory Appl.}, 32(1):26--58, 2005.
+
+\bibitem{DJMMUW19}
+Vida Dujmovi{\'c}, Gwena\"{e}l Joret, Piotr Micek, Pat Morin, Torsten Ueckerdt,
+  and David~R. Wood.
+\newblock Planar graphs have bounded queue-number.
+\newblock In {\em Proc. 60th Annual Symp. Foundations Comput. Sci.
+  \textup{(FOCS '19)}}, pages 862--875. IEEE, 2019.
+
+\bibitem{DMW05}
+Vida Dujmovi{\'c}, Pat Morin, and David~R. Wood.
+\newblock Layout of graphs with bounded tree-width.
+\newblock {\em SIAM J. Comput.}, 34(3):553--579, 2005.
+
+\bibitem{FLW-JGAA03}
+Stefan Felsner, Giussepe Liotta, and Stephen~K. Wismath.
+\newblock Straight-line drawings on restricted integer grids in two and three
+  dimensions.
+\newblock {\em J. Graph Algorithms Appl.}, 7(4):363--398, 2003.
+
+\bibitem{HR92}
+Lenwood~S. Heath and Arnold~L. Rosenberg.
+\newblock Laying out graphs using queues.
+\newblock {\em SIAM J. Comput.}, 21(5):927--958, 1992.
+
+\bibitem{Pupyrev20}
+Sergey Pupyrev.
+\newblock Improved bounds for track numbers of planar graphs.
+\newblock {\em J. Graph Algorithms Appl.}, 24(3):323--341, 2020.
+
+\end{thebibliography}

@@ -1,0 +1,18 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+	
+	\section{Maintaining Treewidth in Graph Products}
+	\subsection{Introduction}
+	With the importance of treewidth and the many applications of product structure theory, a natural question is the following: Can the treewidth be maintained in some meaningful way through taking the product? Finding this out for different classes of graphs that have existing product structures would give new tools for graph analysis and could be a useful tool in achieving stronger bounds on the treewidth of complex graph classes. 
+	\subsection{Problem 4}
+	  Is it true that for every planar graph $G$, there exists a bounded treewidth graph $H$ and a path $P$ such that $G \subsetsim H\boxtimes P$ and $\tw(H\boxtimes P) \in O(\tw(G))$? 
+	
+	\subsection{Related Work}
+	In out paper regarding Problem 1, we show that $$\Omega(\min\{|V(H)|,|V(P)|\})\leq  \tw( H\boxtimes P) \leq O(\min\{|V(H)|,|V(P)|\}).~\text{\cite[Lemma~3, Equation~(2)]{DMWW24}}$$ 
+	
+	Thus this question really asks whether for every planar graph $G$, there exists a bounded treewidth graph $H$ and a path $P$ such that $G\subsetsim H\boxtimes P$ and $\min\{|V(H)|,|V(P)|\} \leq O(\tw(G))$. 
+	
+	\bibliographystyle{plain}
+	\bibliography{largebib-twgp}
+\end{document}

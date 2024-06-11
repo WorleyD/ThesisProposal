@@ -1,0 +1,44 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+	\section{Track Number of Planar Graphs}
+	\subsection{Introduction}
+	
+	A \defn{track layout} of a graph $G$ consists of a vertex colouring and a total order on each colour class, such that no two edges between any two colour classes.
+	
+	
+	The \defn{track number} of a graph is the minimum number of colours needed by a track layout of $G$.
+	
+	
+	A \defn{partition} $P$ of a graph $G$ is a set of connected subgraphs of $G$, such that each vertex belongs to exactly one subgraph.
+	
+	
+	An \defn{H-partition} of a graph $G$ is a partition of $V(G)$ into disjoint bags $\{A_x: x\in V(H)\}$ indexed by the vertices of a graph $H$, such that for every edge $(u,v)\in E(G)$ one of the following holds: 
+	\begin{enumerate}
+		\item $u,v \in A_x$ for some $x\in V(H)$ (intra-bag edge)
+		\item There is an edge $(x,y) \in E(H)$ with $u\in A_x$ and $v \in A_y$. (inter-bag edge)
+	\end{enumerate}
+	
+	
+	A \defn{layering} of a graph $G$ is an ordered partition $(V_0, V_1, ...)$ of $V(G)$ such that for every edge $(v,w)\in E(G)$, if $v\in V_i$ and $w\in V_j$, then $|i-j|\le1$
+	
+	The \defn{layered width} of an $H$-partition of a graph $G$ is the minimum integer $l$ such that for some layering $(V_0, V_1,...)$ of $G$ we have $|A_x\bigcap V_i|\le l, \forall x\in V(H), i\ge0$.
+	
+	A \defn{BFS-layering} of a graph $G$ is a layering of $G$ such that if $r$ is a vertex in a connected graph $G$, then $V_i=\{v \in V(G) |\; \text{dist}_G(r,v)=i\}, \forall i\ge 0$.
+	
+	For each $f \ge 3, s\ge 1$, a \defn{planar $(f,s)$-tree} is an embedded planar graph defined recursively as follows: The smallest $(f,s)$-tree is a 2-connected planar graph on $f+s$ vertices with an embedding where each face (including the outer face) has size at most $f$. Every embedded graph that can be obtained from a planar $(f,s)$-tree $G$ by doing the following operation is also a planar $(f,s)$-tree:
+	\begin{itemize}
+		\item Pick a face of $G$, say $f$, and add a set $S$ of at most $s$ new vertices to $f$. Add edges between some pairs of vertices of $V(f)\bigcup S$ such that that the resulting graph is 2-connected and each new face has size at most $f$.
+	\end{itemize}
+	
+	Track layouts have been studied in the context of graph drawings\cite{GLM05, FLW-JGAA03} as well as in graph layouts\cite{HR92}, but were formally introduced by Dujmovic, Morin, and Wood\cite{DMW05}. Track layouts see strong applications in three-dimensional low volume graph drawing. In particular, a graph $G$ on $n$ vertices has a 3D, straight-line drawing on a grid of size $O(1)\times O(1)\times O(n)$ if and only if $G$ has constant track number.
+	
+	\subsection{Problem 2}
+	We wish to improve the current best known bound on the track number of planar graphs. To this end, we investigate the best known bounds for the track number of planar $(f,s)$-graphs as an intermediate step, then use results on layered $H$-partitions to extend the result to planar graphs.
+	
+	\subsection{Related Work}
+	The current best known bound on the track number of planar graphs is 255 as a result of Pupyrev\cite{Pupyrev20}, which was shown by using layered $H$-partitions directly with planar graphs. This improved the previous bound of 461,184,080, which was a consequence of the planar graph product structure theorem of Dujmovic et al.\cite{DJMMUW19}
+	
+	\bibliographystyle{plain}
+	\bibliography{largebib-tnp}
+	\end{document}

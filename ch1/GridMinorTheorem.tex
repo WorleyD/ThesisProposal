@@ -1,0 +1,101 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+	\section{Grid Minors of Graph Products}
+	\subsection{Introduction}
+	A key theorem in the area of graph minor theory is the \defn{Grid Minor Theorem} (also known as the \defn{Excluded Grid Theorem}) of Robertson and Seymour \cite{RS-V}, which shows that there exists a function $f$ such that for every integer $k$, every graph with treewidth at least $f(k)$ contains a $k \times k$ grid minor. This result gave a new way to analyze grid structures in graphs and had widespread impact on structural graph theory research.
+	
+	This result led to further investigation into what the best possible bounds were for the function $f$, with the current state of the art result being a lower bound of $\Omega(k^2\log k)$ from Robertson et al. \cite{RST-JCTB94} and the best known upper bound of Chuzhoy and Tan which shows that $f \in O(k^9\log^{O(1)}k)$\cite{CT21}.
+	
+	For special classes of graphs, much stronger bounds on $f(k)$ have been shown. One such example is the \defn{Excluded Grid Theorem for Planar Graphs}, which asserts that planar graphs have the \defn{linear grid minor property}, i.e., that for any planar graph, $f(k) \in O(k)$.  This property has been used to devise efficient polynomial time approximation schemes for many NP-hard problems on planar graphs and related graph families\cite{DHK-Algo09,DFHT-JACM05,DH-Algo04, Eppstein-Algo00, FFLS18}. The $\Omega(n^2\log n)$ lower bound mentioned above shows that general graphs do no have the linear grid minor property: there are graphs of treewidth $k^2\log k$ whose largest grid minor is of size $O(k)\times O(k)$ \cite{RST-JCTB94}.
+	
+	However, For general graph products, no results are known that are stronger than the bounds gained from the Grid Minor Theorem. It is known that for two $n$-vertex graphs $G_1$ and $G_2$, $\tw(G_1 \boxprod G_2) \ge n$\cite{}, combining this with the state of the art grid minor theory upper bound above shows general graph products have a $\Omega(n^{1/9}/\polylog(n) \times \Omega(n^{1/9}/\polylog(n))$ grid minor. We investigate whether there exists a better Grid Minor Theorem for graph products, and answer the question in the affirmative, improving the bound to $\Theta(\sqrt{n})$ for Cartesian, strong, and lexicographic graph products.
+	
+	\subsection{Results}
+	We improve the grid minor theorem for graph products in two steps. To do this, we show that:
+	\begin{enumerate}
+		\item  For any two $n$-vertex connected graphs $G_1$ and $G_2$
+		\begin{equation} \label{gridlower}
+			\gm(G_1\cdot G_2) \geq \gm(G_1\boxtimes G_2) \geq \gm(G_1\boxprod G_2) \in \Omega(\sqrt{n})
+		\end{equation} 
+		
+		\item There exists two $n$-vertex connected graphs $G_1$ and $G_2$ (a star and any tree) such that   
+		\begin{equation} \label{gridupper}
+			\gm(G_1\boxprod G_2) \leq \gm(G_1\boxtimes G_2) \leq \gm(G_1\cdot G_2) \in O(\sqrt{n}) 
+		\end{equation} 
+	\end{enumerate}
+	
+	To show \cref{gridupper}, we make use the following lemma
+	
+	\begin{lem}
+		\label{StarTree}
+		Let $S$ be any star and $T$ be any tree. Let $G$ be any graph  with maximum degree $\Delta$ and minimum degree at least 3. If $G$ is a minor of $S \cdot T$ then $|V(G)|< (\Delta+1) |V(T)|$. 
+	\end{lem}
+	
+	\begin{proof}
+		For disjoint $A,B\subseteq V(G)$, let $e(A,B)$ be the number of edges in $G$ between $A$ and $B$. Let
+		$(B_x:x\in V(G))$ be a model of $G$ in $S \cdot T$. Say $V(S)=\{a_0,a_1,\dots,a_n\}$ where $a_0$ is the root of $S$. Let $R$ be the set of vertices $x$ of $G$ such that $(a_0,b)\in V(B_x)$ for some $b\in V(T)$. So $|R|\leq |V(T)|$. For $i\in\{1,\dots,n\}$, let $X_i$ be the set of vertices $x$ of $G$ such that $V(B_x)\subseteq \{(a_i,b): b\in V(T)\}$. By the definition of lexicographic product,  $R,X_1,\dots,X_n$ is a partition of $V(G)$, and no edge of $G$ joins distinct $X_i$ and $X_j$. For each $i\in\{1,\dots,n\}$, by construction, $G[X_i]$ is a minor of $T$, implying $G[X_i]$ is a forest. Since $G$ has minimum degree at least 3, 
+		$$3|X_i| \leq \sum_{v\in X_i}\deg_G(v) = e(R,X_i)+2|E(G[X_i])| < e(R,X_i) + 2|X_i|.$$
+		Hence $e(R,X_i)> |X_i|$. On the other hand,  $e(R,X_1\cup\dots\cup X_n) \leq \Delta|R|$ since $G$ has maximum degree $\Delta$. Hence 
+		$$|V(G)|-|R| = \sum_{i-1}^n|X_i| < \sum_{i=1}^n e(R,X_i) = e(R,X_1\cup\dots\cup X_n) \leq \Delta|R| ,$$
+		implying $|V(G)|< (\Delta+1)|R| \leq (\Delta+1) |V(T)|$, as claimed. 
+	\end{proof}
+	
+	Now, we prove our result by constructing a graph $G$ with $\gm(G) \in O(n)$. Let $G = S_n\cdot T$ where $T$ is any $n$-vertex tree. Now, assume that $G$ contains a $\boxtimes_k$ minor. Let $H$ be the graph obtained by contracting an edge adjacent to each corner of $\boxtimes_k$. Then $H$ has minimum degree 3 and maximum degree 4, satisfying the preconditions for the lemma. 
+	
+	We know that $|V(H)| = k^2 - 4$, thus applying the result of the lemma gives 
+	$$k^2 - 4 \le \Delta|V(T)| = 5n \implies k \le \sqrt{5n + 4}$$ 
+	and so $\gm(S\boxprod T) \le \gm(S\boxtimes T)\le \gm(S\cdot T) \in O(\sqrt{n})$.
+	
+	The full proof of \cref{gridlower} is long and involved. To summarize the approach taken, we choose to list only the required definitions, and to present the lemmas that build to the result without proof. The proofs of all results, as well as other supplementary information, can be found in the full paper \cite{DMWW24}
+	
+	For a rooted tree T, let $n_i(T)$ be the number of vertices of height $i$ in $T$, where a vertex $v$ has height $i$ if the longest path with upper endpoint\footnote{The upper endpoint of a path $P$ in a rooted tree $T$ is the vertex $v\in P$ with minimum distance to the root} $v$ is of order $i$.
+	
+	\begin{lem}\label{anything_times_star}
+		For any positive integer $n$ and any $n$-vertex connected graph $G$, $K_{n} \preceq G\boxprod S_n$.
+	\end{lem}
+	
+	\begin{obs}\label{same_height_unrelated}
+		For any rooted tree $T$ and any $i\in\mathbb{N}$, 
+		$T$ contains a set of $n_i(T)$ pairwise completely unrelated vertical paths, each of order $i$.  
+		As a consequence, $S_{n_i(T),i}\preceq T$ for each $i\in\mathbb{N}$. 
+	\end{obs}
+	
+	\begin{lem}\label{disjoint_p_paths}
+		Let $T$ be a rooted tree with $n\ge 1$ vertices, and let $p\geq 1$ be an integer such that $n_i(T) \leq \frac{3}{2}n/(\pi i)^2$ for each $i\in\{1,\ldots,p-1\}$.  
+		Then $T$ contains pairwise-disjoint vertical paths $P_1,\ldots,P_{\ceil{n/4p}}$, each of order $p$ such that, for each $i\neq j$, $P_i$ and $P_j$ are either completely unrelated or completely related.
+	\end{lem}
+	
+	\begin{lem}\label{star_times_star}
+		Let $s,p\ge 1$ be integers, let $\ell:=5s^2$, and let $T$ be a rooted tree that contains $s^2$ pairwise-disjoint vertical paths, each of order $6p$ such that any pair of these paths is either completely related or completely unrelated.  Then $\gm(T\boxprod S_{\ell,2p})\ge sp$.
+	\end{lem}
+	
+	With these three pieces, the full result can be shown.
+	
+	\begin{thm}\label{lower_bound}
+		If $G_1$ and $G_2$ are connected graphs each having at least $n\ge 1$ vertices, then $\gm(G_1\boxprod G_2)\in\Omega(\sqrt{n})$
+	\end{thm}
+	
+	\begin{proof}
+		For each $b\in\{1,2\}$, let $T_b$ be a tree contained in $G_b$ and having exactly $n$ vertices (which can be constructed by successively deleting leaves starting with a spanning tree of $G_b$).  
+		For each $b\in\{1,2\}$, let $p_b=\min\{i: n_i(T_b)\ge \tfrac{3n}{2p\pi^2}\}$.  (This is well-defined since, otherwise $n=\sum_{p=1}^\infty n_p(T_b) < \sum_{p=1}^\infty \tfrac{3n}{2p\pi^2} = \frac{n}{4}$.)  Without loss of generality, assume $p_2 \le p_1$ and let $\ell:=\ceil{\tfrac{3n}{2p_2\pi^2}}^2$. By \cref{same_height_unrelated}, $S_{\ell,p_2}\preceq T_2\preceq G_2$.  If $p_2 < 6$ then $\ell > \frac{n}{4\pi^2}\in\Omega(n)$ and by \cref{anything_times_star} $K_{\ell}\preceq G_1 \boxprod S_\ell$.  Since $\boxplus_{\floor{\sqrt{\ell}}}\preceq K_{\ell}$, this implies that $\gm(G_1\boxprod G_2)\ge \floor{\sqrt{\ell}}=\Omega(\sqrt{n})$ and we are done, so we may assume that $p_2\ge 6$. Let $p:=\floor{p_2/6}\ge 1$.
+		
+		Since $p_1\ge p_2$, \cref{disjoint_p_paths} implies that $T_1$ contains at least $n/4p$ pairwise disjoint paths $P_1,\ldots,P_{\ceil{n/4p}}$, each of length $p_2\ge 6p$, such that each pair of paths is either completely related or completely unrelated.  Let
+		\[
+		s:=\floor{\min\{\sqrt{\ell/5}, \sqrt{n/4p}\}} = \Theta(\sqrt{n}/p)
+		\]
+		so that $\ell \ge 5s^2$ and $\ceil{n/4p}\ge s^2$.  By \cref{star_times_star}, $\gm(T_1 \boxprod S_{\ell,6p}) \ge sp=\Theta(\sqrt{n})$.  The result now follows from  the fact that $T_1\preceq G_1$, and the fact that $S_{\ell,6p}\preceq S_{\ell,p_2}\preceq G_2$ combined with the observation that for any graphs $G_1$, $G_2$, and $H$, if $G_1\preceq G_2$, then $G_1\boxprod H\preceq G_2\boxprod H$.
+	\end{proof}
+	
+	Note that the full paper \cite{DMWW24} further proves some exact bounds for special graph products, mainly the product of stars and trees. 
+	% begin by identifying large subdivided stars in connected graphs. A \defn{subdivided star} $S_{\ell,p}$ is an $\ell$ leaf star such that each edge of the star has been subdivided $p-1$ times. We can then show through a careful construction that the product of these subdivided stars contains a sufficiently large grid minor. 
+	
+	% For two $n$-vertex graphs $G_1$ and $G_2$, we take a particular spanning trees, $T_1$ and $T_2$, based on the subdivided stars and show that a grid minor of size $\Omega(\sqrt{n})$ can always be constructed inside of $T_1 \boxprod T_2$, proving the result for $G_1$ and $G_2$.
+	
+	\subsection{Future Work}
+	While the bound above is optimal for general graph products, some directions for future work include determining if there are better grid minor theorems for more specific classes of graphs or graph products. We also conjecture that for every integer $r\geq 1$ there is a tree $T$ of radius $r$ such that 
+	$$\gm(T\cdot P_n)\geq c_r n^{1-1/2^r}.$$
+	
+	\bibliographystyle{plain}
+	\bibliography{largebib-gmt}
+\end{document}

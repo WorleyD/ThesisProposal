@@ -1,0 +1,23 @@
+\documentclass[../main.tex]{subfiles}
+
+
+\begin{document}
+	
+\section{Edge Flips in DFS Trees}
+\subsection{Introduction}
+A DFS-tree $T$ of a graph $G$ is a tree with the following properties. For every edge $(u,v)$ in $G$ that is a non-tree edge in $T$, one of $u$ and $v$ must be the ancestor of another (i.e. There is no 'crossing' non-tree edge).
+
+Let $G$ be a connected graph and let $DFST(G,r)$ be the graph with vertex set \{$v_T$ | $T$ is a DFS tree of $G$ rooted at $r$\}. Two vertices $v_{T_1}$, $v_{T_2}$ are adjacent iff $T_1$ can be obtained from $T_2$ by flipping one edge. 
+
+We seek to investigate properties of these special trees such as connectivity, chromatic number, and more, To this end, we find a set of forbidden minors of $G$ that cause disconnectedness in $DFST(G,r)$ and study colourings of $DFST(G,r)$ based on the properties of $G$.  
+
+
+\subsection{Problem 3}
+We seek to find a complete characterization of the graphs $G$ with $DFST(G,r)$ connected. This would allow for easier study of $DFST(G,r)$ and its applications.  
+
+\subsection{Related Work}
+
+
+\bibliographystyle{plain}
+\bibliography{largebib-dfst}
+\end{document}

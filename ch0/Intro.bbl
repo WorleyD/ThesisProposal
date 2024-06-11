@@ -1,0 +1,34 @@
+\def\soft#1{\leavevmode\setbox0=\hbox{h}\dimen7=\ht0\advance \dimen7
+  by-1ex\relax\if t#1\relax\rlap{\raise.6\dimen7
+  \hbox{\kern.3ex\char'47}}#1\relax\else\if T#1\relax
+  \rlap{\raise.5\dimen7\hbox{\kern1.3ex\char'47}}#1\relax \else\if
+  d#1\relax\rlap{\raise.5\dimen7\hbox{\kern.9ex \char'47}}#1\relax\else\if
+  D#1\relax\rlap{\raise.5\dimen7 \hbox{\kern1.4ex\char'47}}#1\relax\else\if
+  l#1\relax \rlap{\raise.5\dimen7\hbox{\kern.4ex\char'47}}#1\relax \else\if
+  L#1\relax\rlap{\raise.5\dimen7\hbox{\kern.7ex
+  \char'47}}#1\relax\else\message{accent \string\soft \space #1 not
+  defined!}#1\relax\fi\fi\fi\fi\fi\fi}
+\begin{thebibliography}{1}
+
+\bibitem{BB1972}
+Francesco Bertelè and Umberto Brioschi.
+\newblock {\em Nonserial Dynamic Programming}.
+\newblock Academic Press, 1972.
+
+\bibitem{Courcelle90}
+Bruno Courcelle.
+\newblock The monadic second-order logic of graphs. {I}. {R}ecognizable sets of
+  finite graphs.
+\newblock {\em Inform. and Comput.}, 85(1):12--75, 1990.
+
+\bibitem{Halin76}
+Rudolf Halin.
+\newblock {$S$}-functions for graphs.
+\newblock {\em J. Geometry}, 8(1-2):171--186, 1976.
+
+\bibitem{ROBERTSON198449}
+Neil Robertson and P.D Seymour.
+\newblock Graph minors. {III}. {P}lanar tree-width.
+\newblock {\em J. Combin. Theory, Ser. B}, 36(1):49--64, 1984.
+
+\end{thebibliography}

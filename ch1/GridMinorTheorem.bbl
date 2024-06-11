@@ -1,0 +1,57 @@
+\def\soft#1{\leavevmode\setbox0=\hbox{h}\dimen7=\ht0\advance \dimen7
+  by-1ex\relax\if t#1\relax\rlap{\raise.6\dimen7
+  \hbox{\kern.3ex\char'47}}#1\relax\else\if T#1\relax
+  \rlap{\raise.5\dimen7\hbox{\kern1.3ex\char'47}}#1\relax \else\if
+  d#1\relax\rlap{\raise.5\dimen7\hbox{\kern.9ex \char'47}}#1\relax\else\if
+  D#1\relax\rlap{\raise.5\dimen7 \hbox{\kern1.4ex\char'47}}#1\relax\else\if
+  l#1\relax \rlap{\raise.5\dimen7\hbox{\kern.4ex\char'47}}#1\relax \else\if
+  L#1\relax\rlap{\raise.5\dimen7\hbox{\kern.7ex
+  \char'47}}#1\relax\else\message{accent \string\soft \space #1 not
+  defined!}#1\relax\fi\fi\fi\fi\fi\fi}
+\begin{thebibliography}{1}
+
+\bibitem{CT21}
+Julia Chuzhoy and Zihan Tan.
+\newblock Towards tight(er) bounds for the excluded grid theorem.
+\newblock {\em J. Combin. Theory Ser. {B}}, 146:219--265, 2021.
+
+\bibitem{DFHT-JACM05}
+Erik~D. Demaine, Fedor~V. Fomin, MohammadTaghi Hajiaghayi, and Dimitrios~M.
+  Thilikos.
+\newblock Subexponential parameterized algorithms on bounded-genus graphs and
+  {$H$}-minor-free graphs.
+\newblock {\em J. ACM}, 52(6):866--893, 2005.
+
+\bibitem{DH-Algo04}
+Erik~D. Demaine and MohammadTaghi Hajiaghayi.
+\newblock Diameter and treewidth in minor-closed graph families, revisited.
+\newblock {\em Algorithmica}, 40(3):211--215, 2004.
+
+\bibitem{DHK-Algo09}
+Erik~D. Demaine, MohammadTaghi Hajiaghayi, and {Ken-ichi} Kawarabayashi.
+\newblock Algorithmic graph minor theory: improved grid minor bounds and
+  {W}agner's contraction.
+\newblock {\em Algorithmica}, 54(2):142--180, 2009.
+
+\bibitem{Eppstein-Algo00}
+David Eppstein.
+\newblock Diameter and treewidth in minor-closed graph families.
+\newblock {\em Algorithmica}, 27(3--4):275--291, 2000.
+
+\bibitem{FFLS18}
+Fedorr~V. Fomin, Daniel Lokshtanov, and Saket Saurabh.
+\newblock Excluded grid minors and efficient polynomial-time approximation
+  schemes.
+\newblock {\em J. ACM}, 65(2), jan 2018.
+
+\bibitem{RS-V}
+Neil Robertson and Paul Seymour.
+\newblock Graph minors. {V}. {E}xcluding a planar graph.
+\newblock {\em J. Combin. Theory Ser. B}, 41(1):92--114, 1986.
+
+\bibitem{RST-JCTB94}
+Neil Robertson, Paul Seymour, and Robin Thomas.
+\newblock Quickly excluding a planar graph.
+\newblock {\em J. Combin. Theory Ser. B}, 62(2):323--348, 1994.
+
+\end{thebibliography}

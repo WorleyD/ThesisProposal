@@ -1,0 +1,57 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+\section{Introduction}
+In this proposal we approach problems relating to structural graph theory, with the main focuses being on graph product structure theory as well as graph minor theory. The four problems we wish to tackle are as follows:
+\begin{enumerate}
+	\item What is the size of the largest grid minor that can be found in a general graph product?
+	\item What is the best possible bound for the track number of planar graphs?
+	\item Under what conditions can all DFS trees of a graph be reached only through a sequence of edge flips from one tree?
+	\item Can we model the treewidth of a graph product as a function of the treewidth of the input graphs?
+\end{enumerate}
+%We begin by introducing relevant background information that will apply to all the problems we wish to approach. We also highlight three specific problems to be investigated, all of which relate to the structural graph theory topics discussed below. For the first problem, we present a new state of the art result for the grid minor number of general graph products. For the remaining two problems, relevant background, current work, and any relevant results in the current literature are highlighted.
+We begin by introducing structural graph theory background relevant to all four problems of interest. We then solve the first problem by presenting a tight bound on the size of the largest grid minor in the Cartesian, strong, and lexicographic product, presenting a constructive argument to show that the product of two $n$-vertex connected graphs will contain a $\Theta(\sqrt{n})\times\Theta(\sqrt{n})$ sized grid minor. We conclude by presenting our preliminary work for problems 2 and 3, and the relevant literature pertaining to problem 4.
+
+\section{Background}
+
+\subsection{Treewidth}
+A \defn{tree-decomposition} of a graph $G$ is a collection $(B_x :x\in V(T))$ of subsets of $V(G)$ (called \defn{bags}) indexed by the vertices of a tree $T$, such that for every edge $uv\in E(G)$, some bag $B_x$ contains both $u$ and $v$, and for every vertex $v\in V(G)$, the set $\{x\in V(T):v\in B_x\}$ induces a non-empty (connected) subtree of $T$. The \defn{width} of $(B_x:x\in V(T))$ is $\max\{|B_x| \colon x\in V(T)\}-1$. 
+
+The \defn{treewidth} of a graph $G$, denoted by \defn{$\tw(G)$}, is the minimum width of a tree-decomposition of $G$.
+
+It is hard to understate the importance of treewidth in the current literature.
+It is a ubiquitous parameter in structural graph theory, measuring, in loose terms, how close a graph is to a tree. 
+Treewidth was first introduced as \textit{dimension} by  Bertel\'e  and Brioschi\cite[pp.~37--38]{BB1972} in 1972, then rediscovered by Hadlin\cite{Halin76} in 1976.
+The parameter was popularized when it was once again rediscovered by Robertson and Seymour\cite{ROBERTSON198449} in 1984 and has since been at the forefront of structural graph theory research. Graphs of bounded treewidth are of particular interest due to the wide implications of their tree-like structure. For example, Courcelle's Theorem\cite{Courcelle90} proves that for many problems that are NP-Hard or NP-Complete on general graphs, they can be solved in linear time on graphs of bounded treewidth.
+
+\subsection{Graph Product Structure Theory}
+Another important area of structural theory is Graph Product Structure Theory. This area of research studies complex graph classes by modelling them as a product of simpler graphs and investigating the properties of these highly structured supergraphs to investigate their more complex subgraphs. The three graph products we focus on are the Cartesian product, the strong product, and the lexicographic product.
+
+The \defn{Cartesian product} of two graphs $G_1$ and $G_2$, denoted $G_1 \boxprod G_2$, is the graph with vertex set $V(G_1 \boxprod G_2) = V(G_1) \times V(G_2)$ where two distinct vertices $(u_1, v_1)$ and $(u_2, v_2)$ are adjacent iff 
+\begin{compactitem}
+	\item $u_1 = u_2$ and $(v_1, v_2) \in E(G_2)$, or
+	\item $v_1 = v_2$ and $(u_1, u_2) \in E(G_1)$.
+\end{compactitem}
+
+The \defn{strong product} of two graphs $G_1$ and $G_2$, denoted $G_1 \boxtimes G_2$, is the graph with vertex set $V(G_1) \times V(G_2)$ where two distinct vertices $(u_1, v_1)$ and $(u_2, v_2)$ are adjacent iff 
+\begin{compactitem}
+	\item $u_1 = u_2$ and $(v_1, v_2) \in E(G_2)$, 
+	\item $v_1 = v_2$ and $(u_1, u_2) \in E(G_1)$, or
+	\item $(u_1, u_2) \in E(G_1)$ and $(v_1, v_2) \in E(G_2)$.
+\end{compactitem}
+
+The \defn{lexicograhic product} of two graphs $G_1$ and $G_2$, denoted $G_1 \cdot G_2$, is the graph with vertex set $V(G_1) \times V(G_2)$ where two distinct vertices $(u_1, v_1)$ and $(u_2, v_2)$ are adjacent iff
+\begin{compactitem}
+	\item $(u_1, u_2) \in E(G_1)$
+	\item $u_1 = u_2$ and $(v_1, v_2) \in E(G_2)$.
+\end{compactitem}
+
+An important property that follows from the above definitions is that $$G_1\boxprod G_2 \subseteq G_1\boxtimes G_2 \subseteq G_1 \cdot G_2.$$
+
+
+\subsection{Grid Minors}
+The final area of structural graph theory that is of particular interest for this proposal is graph minor theory. A graph $H$ is a \defn{minor} of a graph $G$ if a graph isomorphic to $H$ can be obtained from a subgraph of $G$ through a sequence of edge contractions, edge deletions, and vertex deletions. Finding a highly structured minor of a graph $G$ allows us to use properties of the minor to study $G$ itself. In particular, we are interested in studying the largest $k$ such that the $k\times k$ grid graph, denoted $\boxplus_k$, is a minor of $G$. We denote this number to be $\gm(G)$. The relation between grid minors and graph products is very natural due to the fact that $\boxplus_k$ is the Cartesian product of two $k$-vertex paths.
+
+	\bibliographystyle{plain}
+	\bibliography{largebib-intro}
+\end{document}

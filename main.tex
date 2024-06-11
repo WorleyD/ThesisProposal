@@ -1,0 +1,84 @@
+\documentclass{article}
+\usepackage[UKenglish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+ % Something in here is breaking cleveref
+
+\usepackage{graphicx,amsmath,amsthm,amsfonts,amssymb,mathtools}
+\usepackage[longnamesfirst,numbers,sort&compress]{natbib}
+
+\usepackage[sectionbib]{chapterbib}
+\usepackage{subfiles}
+
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage[capitalise, compress, nameinlink, noabbrev]{cleveref}
+
+\newcommand{\boxprod}{\mathbin{\Box}}
+\usepackage{paralist, tabularx}
+
+
+\let\oldsubset\subset
+\newcommand{\subsetsim}{\mathrel{\ooalign{\raise0.175ex\hbox{$\oldsubset$}\cr\hidewidth\raise-0.9ex\hbox{\scalebox{0.9}{$\sim$}}\hidewidth\cr}}}
+
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+
+\DeclareMathOperator{\polylog}{polylog}
+\DeclareMathOperator{\wcol}{wcol}
+\DeclareMathOperator{\col}{col}
+\DeclareMathOperator{\dist}{dist}
+\DeclareMathOperator{\tw}{tw}
+\DeclareMathOperator{\gm}{gm}
+\DeclareMathOperator{\tpw}{tpw}
+\DeclareMathOperator{\pw}{pw}
+\DeclareMathOperator{\td}{td}
+\DeclareMathOperator{\sep}{sep}
+\DeclareMathOperator{\stw}{stw}
+\DeclareMathOperator{\ltw}{ltw}
+\DeclareMathOperator{\rtw}{rtw}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{ques}[thm]{Question}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{obs}[thm]{Observation}
+\newtheorem*{claim}{Claim}
+\newtheorem*{lem*}{Lemma}
+\theoremstyle{definition}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem*{conj*}{Conjecture}
+
+\newcommand{\defn}[1]{\textcolor{Maroon}{\emph{#1}}}
+ 
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+    \Huge \textbf{Doctoral Thesis Propsal} \\
+    \vspace{.5cm}
+    \LARGE David Worley \\
+    \vfill
+    \large
+    School of Electrical Engineering and Computer- Science \\
+    University of Ottawa\\
+    Ottawa \\
+    Canada \\
+    \today
+\end{center}
+\end{titlepage}
+
+
+\subfileinclude{ch0/intro}
+
+\subfileinclude{ch1/GridMinorTheorem}
+
+\subfileinclude{ch2/TNPlanar}
+
+\subfileinclude{ch3/DFST}
+
+\subfileinclude{ch4/TWGP}
+
+\end{document}
