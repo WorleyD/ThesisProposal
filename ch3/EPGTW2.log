@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.10)  17 JUN 2024 18:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.10)  17 JUN 2024 18:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -332,6 +332,10 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package chapterbib Warning: The sectionbib option changes "\section *" to "\sec
 tion *" in \thebibliography on input line 3.
 
+
+Package natbib Warning: Citation `DJMMUW20' on page 1 undefined on input line 7
+.
+
 LaTeX Font Info:    Trying to load font information for U+msa on input line 9.
 (C:\Users\Dav_W\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -341,33 +345,45 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 9.
 (C:\Users\Dav_W\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+
+Package natbib Warning: Citation `DJMMUW20' on page 1 undefined on input line 1
+2.
+
+
+Package natbib Warning: Citation `todo' on page 1 undefined on input line 12.
+
 (EPGTW2.bbl
 
 Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
-) [1
+)
+
+Package natbib Warning: There were undefined citations.
+
+[1
 
 {C:/Users/Dav_W/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 (EPGTW2.aux) ) 
 Here is how much of TeX's memory you used:
- 7576 strings out of 478659
- 130706 string characters out of 2845919
+ 7578 strings out of 478659
+ 130728 string characters out of 2845919
  462042 words of memory out of 3000000
- 25600 multiletter control sequences out of 15000+600000
- 408975 words of font info for 40 fonts, out of 8000000 for 9000
+ 25601 multiletter control sequences out of 15000+600000
+ 409751 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,79p,676b,127s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,5n,79p,693b,127s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\Dav_W\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecrm1000.pk> <C:\Users\Dav_W\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecbx1200.pk> <C:\Users\Dav_W\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecbx1440.pk><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Dav_W/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Dav_W/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Dav_W/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on EPGTW2.pdf (1 page, 69429 bytes).
+/dpi600\ecbx1000.pk> <C:\Users\Dav_W\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecrm1000.pk> <C:\Users\Dav_W\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Dav_W\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecbx1440.pk><C:/Users/Dav_W/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Dav_W/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Dav_W/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Dav_W/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on EPGTW2.pdf (1 page, 69523 bytes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
+ 127 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
