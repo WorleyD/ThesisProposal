@@ -1,3 +1,42 @@
-\begin{thebibliography}{}
+\def\soft#1{\leavevmode\setbox0=\hbox{h}\dimen7=\ht0\advance \dimen7
+  by-1ex\relax\if t#1\relax\rlap{\raise.6\dimen7
+  \hbox{\kern.3ex\char'47}}#1\relax\else\if T#1\relax
+  \rlap{\raise.5\dimen7\hbox{\kern1.3ex\char'47}}#1\relax \else\if
+  d#1\relax\rlap{\raise.5\dimen7\hbox{\kern.9ex \char'47}}#1\relax\else\if
+  D#1\relax\rlap{\raise.5\dimen7 \hbox{\kern1.4ex\char'47}}#1\relax\else\if
+  l#1\relax \rlap{\raise.5\dimen7\hbox{\kern.4ex\char'47}}#1\relax \else\if
+  L#1\relax\rlap{\raise.5\dimen7\hbox{\kern.7ex
+  \char'47}}#1\relax\else\message{accent \string\soft \space #1 not
+  defined!}#1\relax\fi\fi\fi\fi\fi\fi}
+\begin{thebibliography}{1}
+
+\bibitem{DEJGMM21}
+Vida Dujmovi\'c, Louis Esperet, Cyril Gavoille, Gwena\"el Joret, Piotr Micek,
+  and Pat Morin.
+\newblock Adjacency labelling for planar graphs (and beyond).
+\newblock {\em J. ACM}, 68(6):42, 2021.
+
+\bibitem{DEJWW20}
+Vida Dujmovi{\'c}, Louis Esperet, Gwena\"{e}l Joret, Bartosz Walczak, and
+  David~R. Wood.
+\newblock Planar graphs have bounded nonrepetitive chromatic number.
+\newblock {\em Adv. Comb.}, \#5, 2020.
+
+\bibitem{DJMMUW20}
+Vida Dujmovi{\'c}, Gwena\"{e}l Joret, Piotr Micek, Pat Morin, Torsten Ueckerdt,
+  and David~R. Wood.
+\newblock Planar graphs have bounded queue-number.
+\newblock {\em J. ACM}, 67(4):\#22, 2020.
+
+\bibitem{DJMMW24}
+Vida Dujmović, Gwenaël Joret, Piotr Micek, Pat Morin, and David Wood.
+\newblock Bounded-degree planar graphs do not have bounded-degree product
+  structure.
+\newblock {\em The Electronic Journal of Combinatorics}, 31(2), June 2024.
+
+\bibitem{EJM23}
+Louis Esperet, Gwena\"{e}l Joret, and Pat Morin.
+\newblock Sparse universal graphs for planarity.
+\newblock {\em J. London Math. Soc.}, 108(4):1333--1357, 2023.
 
 \end{thebibliography}

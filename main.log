@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.10)  17 JUN 2024 18:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.10)  17 JUN 2024 20:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -379,16 +379,16 @@ Package natbib Warning: Citation `DMWW24' on page 6 undefined on input line 90.
 [9]
 \openout2 = `ch3/EPGTW2.aux'.
 
- (ch3/EPGTW2.tex (ch3/EPGTW2.bbl
+ (ch3/EPGTW2.tex
 
-Package natbib Warning: Empty `thebibliography' environment on input line 3.
+Package natbib Warning: Citation `?' on page 10 undefined on input line 14.
 
-)) [10
-
-
+(ch3/EPGTW2.bbl [10
 
 
-]
+
+
+])) [11]
 \openout2 = `ch4/TWGP.aux'.
 
  (ch4/TWGP.tex
@@ -405,7 +405,7 @@ y/m/n/10 j\OML/cmm/m/it/10 V\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P\OT1/cmr/m/n/10
 )\OMS/cmsy/m/n/10 jg\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 : []
  []
 
-(ch4/TWGP.bbl)) [11
+(ch4/TWGP.bbl)) [12
 
 
 
@@ -417,10 +417,10 @@ Package natbib Warning: There were undefined citations.
 (main.aux (ch0/intro.aux) (ch1/GridMinorTheorem.aux) (ch2/TNPlanar.aux)
 (ch3/EPGTW2.aux) (ch4/TWGP.aux)) ) 
 Here is how much of TeX's memory you used:
- 7864 strings out of 478659
- 137425 string characters out of 2845919
+ 7884 strings out of 478659
+ 137730 string characters out of 2845919
  470351 words of memory out of 3000000
- 25820 multiletter control sequences out of 15000+600000
+ 25840 multiletter control sequences out of 15000+600000
  419250 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,9n,62p,817b,356s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -452,9 +452,9 @@ public/amsfonts/cm/cmsy7.pfb><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/font
 s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Dav_W/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Dav_W/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (12 pages, 276377 bytes).
+Output written on main.pdf (13 pages, 277858 bytes).
 PDF statistics:
- 451 PDF objects out of 1000 (max. 8388607)
+ 456 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

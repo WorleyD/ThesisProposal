@@ -50,12 +50,30 @@ Emilio Di~Giacomo, Giuseppe Liotta, and Henk Meijer.
   volume.
 \newblock {\em Comput. Geom. Theory Appl.}, 32(1):26--58, 2005.
 
+\bibitem{DEJGMM21}
+Vida Dujmovi\'c, Louis Esperet, Cyril Gavoille, Gwena\"el Joret, Piotr Micek,
+  and Pat Morin.
+\newblock Adjacency labelling for planar graphs (and beyond).
+\newblock {\em J. ACM}, 68(6):42, 2021.
+
+\bibitem{DEJWW20}
+Vida Dujmovi{\'c}, Louis Esperet, Gwena\"{e}l Joret, Bartosz Walczak, and
+  David~R. Wood.
+\newblock Planar graphs have bounded nonrepetitive chromatic number.
+\newblock {\em Adv. Comb.}, \#5, 2020.
+
 \bibitem{DJMMUW19}
 Vida Dujmovi{\'c}, Gwena\"{e}l Joret, Piotr Micek, Pat Morin, Torsten Ueckerdt,
   and David~R. Wood.
 \newblock Planar graphs have bounded queue-number.
 \newblock In {\em Proc. 60th Annual Symp. Foundations Comput. Sci.
   \textup{(FOCS '19)}}, pages 862--875. IEEE, 2019.
+
+\bibitem{DJMMUW20}
+Vida Dujmovi{\'c}, Gwena\"{e}l Joret, Piotr Micek, Pat Morin, Torsten Ueckerdt,
+  and David~R. Wood.
+\newblock Planar graphs have bounded queue-number.
+\newblock {\em J. ACM}, 67(4):\#22, 2020.
 
 \bibitem{DMW05}
 Vida Dujmovi{\'c}, Pat Morin, and David~R. Wood.
@@ -66,6 +84,11 @@ Vida Dujmovi{\'c}, Pat Morin, and David~R. Wood.
 David Eppstein.
 \newblock Diameter and treewidth in minor-closed graph families.
 \newblock {\em Algorithmica}, 27(3--4):275--291, 2000.
+
+\bibitem{EJM23}
+Louis Esperet, Gwena\"{e}l Joret, and Pat Morin.
+\newblock Sparse universal graphs for planarity.
+\newblock {\em J. London Math. Soc.}, 108(4):1333--1357, 2023.
 
 \bibitem{FLW-JGAA03}
 Stefan Felsner, Giussepe Liotta, and Stephen~K. Wismath.
