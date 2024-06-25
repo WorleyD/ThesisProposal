@@ -38,11 +38,11 @@ Illegal, another \bibdata command---line 8 of file ch3/EPGTW2.aux
 I'm skipping whatever remains of this command
 Reallocating 'name_of_file' (item size: 1) to 13 items.
 A level-1 auxiliary file: ch4/TWGP.aux
-Illegal, another \bibstyle command---line 6 of file ch4/TWGP.aux
+Illegal, another \bibstyle command---line 7 of file ch4/TWGP.aux
  : \bibstyle
  :          {plain}
 I'm skipping whatever remains of this command
-Illegal, another \bibdata command---line 7 of file ch4/TWGP.aux
+Illegal, another \bibdata command---line 8 of file ch4/TWGP.aux
  : \bibdata
  :         {ch4/largebib-twgp}
 I'm skipping whatever remains of this command
@@ -59,47 +59,47 @@ Repeated entry---line 341 of file ch0/largebib-intro.bib
  : @inbook{BB1972
  :               ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "DMWW24"
 Warning--I didn't find a database entry for "DJMMW24"
-You've used 22 entries,
+Warning--empty journal in DMWW24
+You've used 23 entries,
             2118 wiz_defined-function locations,
-            705 strings with 8314 characters,
-and the built_in function-call counts, 7673 in all, are:
-= -- 764
-> -- 382
+            708 strings with 8405 characters,
+and the built_in function-call counts, 7974 in all, are:
+= -- 790
+> -- 405
 < -- 1
-+ -- 151
-- -- 128
-* -- 611
-:= -- 1305
-add.period$ -- 67
-call.type$ -- 22
-change.case$ -- 129
++ -- 160
+- -- 136
+* -- 632
+:= -- 1361
+add.period$ -- 70
+call.type$ -- 23
+change.case$ -- 136
 chr.to.int$ -- 0
-cite$ -- 22
-duplicate$ -- 253
-empty$ -- 571
-format.name$ -- 128
-if$ -- 1549
+cite$ -- 24
+duplicate$ -- 263
+empty$ -- 588
+format.name$ -- 136
+if$ -- 1606
 int.to.chr$ -- 0
-int.to.str$ -- 22
-missing$ -- 23
-newline$ -- 114
-num.names$ -- 44
-pop$ -- 96
+int.to.str$ -- 23
+missing$ -- 24
+newline$ -- 119
+num.names$ -- 46
+pop$ -- 105
 preamble$ -- 2
-purify$ -- 108
+purify$ -- 114
 quote$ -- 0
-skip$ -- 171
+skip$ -- 178
 stack$ -- 0
-substring$ -- 542
+substring$ -- 547
 swap$ -- 32
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 86
-warning$ -- 0
-while$ -- 80
-width$ -- 24
-write$ -- 245
+type$ -- 90
+warning$ -- 1
+while$ -- 82
+width$ -- 25
+write$ -- 254
 (There were 11 error messages)

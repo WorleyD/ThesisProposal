@@ -80,6 +80,11 @@ Vida Dujmovi{\'c}, Pat Morin, and David~R. Wood.
 \newblock Layout of graphs with bounded tree-width.
 \newblock {\em SIAM J. Comput.}, 34(3):553--579, 2005.
 
+\bibitem{DMWW24}
+Vida Dujmović, Pat Morin, David~R. Wood, and David Worley.
+\newblock Grid minors and products.
+\newblock 2024.
+
 \bibitem{Eppstein-Algo00}
 David Eppstein.
 \newblock Diameter and treewidth in minor-closed graph families.

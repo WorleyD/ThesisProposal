@@ -21,6 +21,11 @@ Bruno Courcelle.
   finite graphs.
 \newblock {\em Inform. and Comput.}, 85(1):12--75, 1990.
 
+\bibitem{DMWW24}
+Vida Dujmović, Pat Morin, David~R. Wood, and David Worley.
+\newblock Grid minors and products.
+\newblock 2024.
+
 \bibitem{Halin76}
 Rudolf Halin.
 \newblock {$S$}-functions for graphs.

@@ -10,7 +10,7 @@ In this proposal we approach problems relating to structural graph theory, with 
 	\item Can we model the treewidth of a graph product as a function of the treewidth of the input graphs?
 \end{enumerate}
 %We begin by introducing relevant background information that will apply to all the problems we wish to approach. We also highlight three specific problems to be investigated, all of which relate to the structural graph theory topics discussed below. For the first problem, we present a new state of the art result for the grid minor number of general graph products. For the remaining two problems, relevant background, current work, and any relevant results in the current literature are highlighted.
-We begin by introducing structural graph theory background relevant to all four problems of interest. We then solve the first problem by presenting a tight bound on the size of the largest grid minor in the Cartesian, strong, and lexicographic product, presenting a constructive argument to show that the product of two $n$-vertex connected graphs will contain a $\Theta(\sqrt{n})\times\Theta(\sqrt{n})$ sized grid minor. We conclude by presenting our preliminary work for problems 2 and 3, and the relevant literature pertaining to problem 4.
+We begin by introducing structural graph theory background relevant to all four problems of interest. We solve the first problem by presenting a tight bound on the size of the largest grid minor in the Cartesian, strong, and lexicographic product, presenting a constructive argument to show that the product of two $n$-vertex connected graphs will contain a $\Theta(\sqrt{n})\times\Theta(\sqrt{n})$ sized grid minor. A summary of these details is provided and the full work on this problem can be found in \cite{DMWW24}. We conclude by presenting our preliminary work as well as the relevant literature for problems 2, 3, and 4.
 
 \section{Background}
 
@@ -40,17 +40,17 @@ The \defn{strong product} of two graphs $G_1$ and $G_2$, denoted $G_1 \boxtimes 
 	\item $(u_1, u_2) \in E(G_1)$ and $(v_1, v_2) \in E(G_2)$.
 \end{compactitem}
 
-The \defn{lexicograhic product} of two graphs $G_1$ and $G_2$, denoted $G_1 \cdot G_2$, is the graph with vertex set $V(G_1) \times V(G_2)$ where two distinct vertices $(u_1, v_1)$ and $(u_2, v_2)$ are adjacent iff
+The \defn{lexicographic product} of two graphs $G_1$ and $G_2$, denoted $G_1 \cdot G_2$, is the graph with vertex set $V(G_1) \times V(G_2)$ where two distinct vertices $(u_1, v_1)$ and $(u_2, v_2)$ are adjacent iff
 \begin{compactitem}
 	\item $(u_1, u_2) \in E(G_1)$
 	\item $u_1 = u_2$ and $(v_1, v_2) \in E(G_2)$.
 \end{compactitem}
 
-An important property that follows from the above definitions is that $$G_1\boxprod G_2 \subseteq G_1\boxtimes G_2 \subseteq G_1 \cdot G_2.$$
+It is important to note that while the Cartesian and strong products are commutative, the lexicographic product is not. An additional important property that follows from the above definitions is that $$G_1\boxprod G_2 \subseteq G_1\boxtimes G_2 \subseteq G_1 \cdot G_2.$$
 
 
 \subsection{Graph Minors and Grids}
-The final area of structural graph theory that is of particular interest for this proposal is graph minor theory. A graph $H$ is a \defn{minor} of a graph $G$ if a graph isomorphic to $H$ can be obtained from a subgraph of $G$ through a sequence of edge contractions, edge deletions, and vertex deletions. Finding a highly structured minor of a graph $G$ allows us to use properties of the minor to study $G$ itself. In particular, we are interested in studying the largest $k$ such that the $k\times k$ grid graph, denoted $\boxplus_k$, is a minor of $G$. We denote this number to be $\gm(G)$. The relation between grid minors and graph products is very natural due to the fact that $\boxplus_k$ is the Cartesian product of two $k$-vertex paths.
+The final area of structural graph theory that is of particular interest for this proposal is graph minor theory. A graph $H$ is a \defn{minor} of a graph $G$ if a graph isomorphic to $H$ can be obtained from a subgraph of $G$ through a sequence of edge contractions, edge deletions, and vertex deletions. Finding a highly structured minor of a graph $G$ allows us to use properties of the minor to study $G$ itself. In particular, we are interested in studying the largest $k$ such that the $k\times k$ grid graph, denoted $\boxplus_k$, is a minor of $G$. We denote this number to be $\gm(G)$. The relation between grid minors and graph products is very natural due to the fact that $\boxplus_k$ is the Cartesian product of two $k$-vertex paths and the fact that the grid graphs are canonical examples of graphs of large treewidth, with $\tw(\boxplus_k)=k$.
 
 	\bibliographystyle{plain}
 	\bibliography{largebib-intro}
