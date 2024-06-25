@@ -33,6 +33,10 @@ Erik~D. Demaine, MohammadTaghi Hajiaghayi, and {Ken-ichi} Kawarabayashi.
   {W}agner's contraction.
 \newblock {\em Algorithmica}, 54(2):142--180, 2009.
 
+\bibitem{DMWW24}
+Vida Dujmović, Pat Morin, David~R. Wood, and David Worley.
+\newblock Grid minors and products, 2024.
+
 \bibitem{Eppstein-Algo00}
 David Eppstein.
 \newblock Diameter and treewidth in minor-closed graph families.

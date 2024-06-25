@@ -5,7 +5,6 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
 Reallocating 'name_of_file' (item size: 1) to 16 items.
 Database file #1: largebib-epgtw2.bib
-Warning--I didn't find a database entry for ""
 You've used 5 entries,
             2118 wiz_defined-function locations,
             573 strings with 6002 characters,
@@ -47,4 +46,3 @@ warning$ -- 0
 while$ -- 14
 width$ -- 6
 write$ -- 58
-(There was 1 warning)

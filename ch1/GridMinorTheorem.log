@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.10)  11 JUN 2024 11:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.10)  24 JUN 2024 18:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -343,56 +343,43 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 [1
 
-{C:/Users/Dav_W/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-
-Package natbib Warning: Citation `DMWW24' on page 2 undefined on input line 50.
-
-
-[2]
-
-Package natbib Warning: Citation `DMWW24' on page 3 undefined on input line 90.
-
-
-(GridMinorTheorem.bbl [3])
-
-Package natbib Warning: There were undefined citations.
-
-[4] (GridMinorTheorem.aux) ) 
+{C:/Users/Dav_W/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
+(GridMinorTheorem.bbl [3]) [4] (GridMinorTheorem.aux) ) 
 Here is how much of TeX's memory you used:
- 7660 strings out of 478659
- 132007 string characters out of 2845919
+ 7664 strings out of 478659
+ 132047 string characters out of 2845919
  473062 words of memory out of 3000000
- 25672 multiletter control sequences out of 15000+600000
+ 25676 multiletter control sequences out of 15000+600000
  415835 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,791b,250s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:\Users\Dav_W\AppData\Local\MiKTeX\fonts/pk/ljfo
-ur/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\Dav_W\AppData\Local\MiKTeX\fonts/p
-k/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\Dav_W\AppData\Local\MiKTeX\f
-onts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\Dav_W\AppData\Local\Mi
-KTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\Dav_W\AppData\Lo
-cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\Dav_W\AppD
-ata\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Dav_
-W\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\User
-s\Dav_W\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk><C:
-/Users/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex1
-0.pfb><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmmi10.pfb><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmmi5.pfb><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Dav_W/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Dav_W/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Dav_W/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Dav_W/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users
-/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><
-C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
-y8.pfb><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/symbols/msam10.pfb><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/symbols/msbm10.pfb>
-Output written on GridMinorTheorem.pdf (4 pages, 215670 bytes).
+ 75i,8n,79p,814b,258s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:\Users\Dav_W\AppData
+\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\Dav_W\A
+ppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\D
+av_W\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\U
+sers\Dav_W\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk>
+ <C:\Users\Dav_W\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti10
+00.pk> <C:\Users\Dav_W\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
+ecrm1000.pk> <C:\Users\Dav_W\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
+pi600\ecbx1200.pk> <C:\Users\Dav_W\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappe
+n/ec/dpi600\ecbx1440.pk><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmex10.pfb><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Dav_W/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Dav_W/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Dav_W/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Dav
+_W/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/U
+sers/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pf
+b><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmr7.pfb><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmsy7.pfb><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Dav_W/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on GridMinorTheorem.pdf (4 pages, 217205 bytes).
 PDF statistics:
- 307 PDF objects out of 1000 (max. 8388607)
+ 316 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
