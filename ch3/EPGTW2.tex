@@ -4,15 +4,17 @@
 	
 	\section{Product Structure of Bounded Degree Planar Graphs}
 	\subsection{Introduction}
-	The usage of product structure theory to study planar graphs has been a very active area of research since Dujmovic et al first showed that planar graphs have bounded queue number using product structure theory \cite{DJMMUW20}. Since then, this result has gone on to lead to improvements in graph colouring\cite{DEJWW20}, adjacency labelling\cite{DEJGMM21,EJM23}, and more. 
-	These results have pushed additional interest into the research of product structure theorems for other graph classes and for more specialized ones. We focus on improving the product structure theorems for bounded-degree planar graphs.
+	The usage of product structure theory to study planar graphs has been a very active area of research since Dujmovic et al first showed that planar graphs have bounded queue number using product structure theory \cite{DJMMUW20}. Since then, product structure theorems for numerous graph classes, and even multiple variants for planar graphs alone, have been developed. 
+	In the case of planar graphs, these theorems are generally of the following form: For any planar graph $G$, and some integer $c$, $G\subseteq H \boxtimes P \boxtimes K_c$ for a graph $H$, a path $P$, and the complete graph on $c$ vertices $K_c$. These theorems tend to try to minimize $c$, $\tw(H)$, or to ensure the graph $H$ has some desirable properties that makes it convenient for study. There also exist variants that exclude the complete graph $K_c$ from the product, at the cost of increasing $\tw(H)$.
+	These theorems have lead to new results and improvements in graph colouring\cite{DEJWW20}, adjacency labelling\cite{DEJGMM21,EJM23} and much more, leaving a wide impact on the field of structural graph theory and resolving numerous open problems and conjectures. Thus, any improvements made to these theorems can have immediate effects in improving bounds throughout the literature.
 	
 	\subsection{Problem 3}
-	Given a planar graph $G$ with maximum degree $\Delta$, is it true that $G$ is contained in the product $$H\boxtimes P\boxtimes K_c$$ for a graph $H$ of treewidth 2, a path $P$, and the complete graph $K_c$ where $c$ is bounded by some function of $\Delta$?
+	We wish to improve upon the existing bounded-degree planar graph product structure theorem to tighten the bound on $\tw(H)$. To this end we wish to answer the following question: Given a planar graph $G$ with maximum degree $\Delta$, is it true that $G$ is contained in the product $$H\boxtimes P\boxtimes K_c$$ for a graph $H$ of treewidth 2, a path $P$, and the complete graph $K_c$ where $c$ is bounded by some function of $\Delta$? If this is true, can $H$ be outerplanar? 
 	
 	\subsection{Related Work}
-	This problem looks to tighten the bound on $\tw(H)$ to close the bound on the product structure of bounded-degree planar graphs. The problem was initially shown to be true for $\tw(H)=3$ by Dujmovic et al \cite{DJMMUW20}.It was then shown that the case for $\tw(H)=1$ is false\cite{DJMMW24}. 
-	In particular, that there exists an infinite family of graphs $\mathbb{G}$ of maximum degree 5 such that for each $g\in\mathbb{G}$, for every graph $H$ of treewidth $t$ and maximum degree $\Delta$, every path $P$, and every integer $c$, if $G\subseteq H \boxtimes P\boxtimes K_c$, then $t\Delta c\ge 2^{\Omega(\sqrt{\log\log n})}$.
+	In \cite{DJMMUW20}, Dujmovic et al showed that for every planar graph $G$, $G\subseteq H\boxtimes P\boxtimes K_3$, where $\tw(H) \le 3$, while this bound was shown for all planar graphs, it remains the best known upper bound for the bounded-degree case as well. The bound was further tightened from below by Dujmovic et al, who showed that for ever integer $c$, there exists a planar graph $G$ such that $G$ is not contained in any product of the form $T\boxtimes P\boxtimes K_c$\cite{DJMMW24}.  
+	This result comes from identifying an infinite family of graphs $\mathbb{G}$ of maximum degree 5 such that for each $g\in\mathbb{G}$, for every graph $H$ of treewidth $t$ and maximum degree $\Delta$, every path $P$, and every integer $c$, if $G\subseteq H \boxtimes P\boxtimes K_c$, then $t\Delta c\ge 2^{\Omega(\sqrt{\log\log n})}$.
+	The same paper additionally shows that even for graphs of low maximum degree, there is no product structure theorem that can guarantee that $H$ has bounded degree. 
 	
 	\bibliographystyle{plain}
 	

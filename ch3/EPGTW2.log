@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.10)  25 JUN 2024 12:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.10)  25 JUN 2024 14:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -332,13 +332,11 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package chapterbib Warning: The sectionbib option changes "\section *" to "\sec
 tion *" in \thebibliography on input line 3.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 11.
-
+LaTeX Font Info:    Trying to load font information for U+msa on input line 8.
 (C:\Users\Dav_W\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 11.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 8.
 
 (C:\Users\Dav_W\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -348,13 +346,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {C:/Users/Dav_W/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]) [2] (EPGTW2
 .aux) ) 
 Here is how much of TeX's memory you used:
- 7604 strings out of 478659
- 131066 string characters out of 2845919
- 465042 words of memory out of 3000000
- 25627 multiletter control sequences out of 15000+600000
+ 7603 strings out of 478659
+ 131053 string characters out of 2845919
+ 467042 words of memory out of 3000000
+ 25626 multiletter control sequences out of 15000+600000
  409661 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,79p,408b,262s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,5n,79p,597b,248s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\Dav_W\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600
 \ecti1000.pk> <C:\Users\Dav_W\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/
 dpi600\ecrm1000.pk> <C:\Users\Dav_W\AppData\Local\MiKTeX\fonts/pk/ljfour/jknapp
@@ -369,9 +367,9 @@ rs/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 ><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symb
 ols/msam10.pfb><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /amsfonts/symbols/msbm10.pfb>
-Output written on EPGTW2.pdf (2 pages, 121265 bytes).
+Output written on EPGTW2.pdf (2 pages, 123351 bytes).
 PDF statistics:
- 201 PDF objects out of 1000 (max. 8388607)
+ 203 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
