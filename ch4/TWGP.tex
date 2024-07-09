@@ -4,7 +4,9 @@
 	
 	\section{Maintaining Treewidth in Graph Products}
 	\subsection{Introduction}
-	With the importance of treewidth and the many applications of product structure theory, a natural question is the following: Can the treewidth be maintained in some meaningful way through taking the product? Solving this problem in any sense would have deep impact on structural graph theory by giving a strong tool to study the treewidth of complex graph classes by using product structure theorems to simplify the problem and give a new approach to improving the treewidth bounds of complicated graph classes.
+	With the importance of treewidth and the many applications of product structure theory, a natural question is the following: Can the treewidth be maintained in some meaningful way through taking the product? Finding an upper bound on the treewidth of the product would not only deepen our understanding of the power of product structure theorems, but could lead way to further improvements to them and allow us to embed complicated graph products in even simpler graph products. This would make it even easier to solve problems on the product and to carry the solution down to the embedded graph in a nicer fashion. 
+	
+	For a more concrete example, an algorithm that could be complicated to develop for a certain class of graphs could instead be used on a product that the graphs can be embedded in, and thus knowing more about the properties and bounds of the product would allow for more efficient approximation algorithms to study these complex graph classes.
 	\subsection{Problem 4}
 	  Is it true that for every planar graph $G$, there exists a bounded treewidth graph $H$ and a path $P$ such that $G \subsetsim H\boxtimes P$ and $\tw(H\boxtimes P) \in O(\tw(G))$? 
 	
@@ -13,7 +15,7 @@
 	
 	Thus we can instead ask whether for every planar graph $G$, there exists a bounded treewidth graph $H$ and a path $P$ such that $G\subsetsim H\boxtimes P$ and $\min\{|V(H)|,|V(P)|\} \leq O(\tw(G))$. 
 	
-	Little research has been done studying product structures where the full product has bounded treewidth. In fact, it is even open whether $\min\{V(H)|,|V(P)|\} \leq O(f(\tw(G)))$ for some function $f$, or if $\min\{V(H)|,|V(P)|\} \leq O(\sqrt{|V(G)|})$. The second bound is weaker due to the planar separator theorem\cite{LT79}, which states that $\tw(G) \le O(\sqrt{|V(G)|}\})$ for every planar graph $G$.
+	Little research has been done studying product structures where the full product has bounded treewidth. In fact, it is even open whether $\min\{V(H)|,|V(P)|\} \leq O(f(\tw(G)))$ for some function $f$, or if $\min\{V(H)|,|V(P)|\} \leq O(\sqrt{|V(G)|})$. The second bound is weaker than the posed question due to the planar separator theorem\cite{LT79}, which states that $\tw(G) \le O(\sqrt{|V(G)|}\})$ for every planar graph $G$.
 	
 	\bibliographystyle{plain}
 	\bibliography{largebib-twgp}
