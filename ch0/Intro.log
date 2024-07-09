@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.10)  9 JUL 2024 13:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.10)  9 JUL 2024 15:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -346,13 +346,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {C:/Users/Dav_W/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (Intro.bbl [
 2]) [3] (Intro.aux) ) 
 Here is how much of TeX's memory you used:
- 7608 strings out of 478659
- 131129 string characters out of 2845919
+ 7607 strings out of 478659
+ 131117 string characters out of 2845919
  469040 words of memory out of 3000000
- 25630 multiletter control sequences out of 15000+600000
+ 25629 multiletter control sequences out of 15000+600000
  409996 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,9n,79p,891b,246s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,9n,79p,885b,246s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\Dav_W\AppData\Local\MiKTeX\fonts/pk/ljfour/jkna
 ppen/ec/dpi600\tcrm1000.pk> <C:\Users\Dav_W\AppData\Local\MiKTeX\fonts/pk/ljfou
 r/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\Dav_W\AppData\Local\MiKTeX\fonts/pk
@@ -366,7 +366,7 @@ av_W/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
 pfb><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmsy10.pfb><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/symbols/msam10.pfb>
-Output written on Intro.pdf (3 pages, 123260 bytes).
+Output written on Intro.pdf (3 pages, 123282 bytes).
 PDF statistics:
  209 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

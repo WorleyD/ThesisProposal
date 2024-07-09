@@ -4,9 +4,10 @@
 	
 	\section{Maintaining Treewidth in Graph Products}
 	\subsection{Introduction}
-	With the importance of treewidth and the many applications of product structure theory, a natural question is the following: Can the treewidth be maintained in some meaningful way through taking the product? Finding an upper bound on the treewidth of the product would not only deepen our understanding of the power of product structure theorems, but could lead way to further improvements to them and allow us to embed complicated graph products in even simpler graph products. This would make it even easier to solve problems on the product and to carry the solution down to the embedded graph in a nicer fashion. 
+	With the importance of treewidth and the many applications of product structure theory, a natural question is the following: What can the treewidth of a planar graph $G$ tell us about the treewidth of its supergraph of the form $H\boxtimes P$?
 	
-	For a more concrete example, an algorithm that could be complicated to develop for a certain class of graphs could instead be used on a product that the graphs can be embedded in, and thus knowing more about the properties and bounds of the product would allow for more efficient approximation algorithms to study these complex graph classes.
+	Finding an upper bound on the treewidth of the product would not only deepen our understanding of the power of product structure theorems, but could lead way to further improvements to them and allow us to embed complicated graph products in even simpler graph products. This has the benefit of improving approximation algorithms 
+	that make use of the product to solve problems on the embedded graph, as many of these algorithms make use of the treewidth to solve problems more efficiently. 
 	\subsection{Problem 4}
 	  Is it true that for every planar graph $G$, there exists a bounded treewidth graph $H$ and a path $P$ such that $G \subsetsim H\boxtimes P$ and $\tw(H\boxtimes P) \in O(\tw(G))$? 
 	
@@ -15,7 +16,14 @@
 	
 	Thus we can instead ask whether for every planar graph $G$, there exists a bounded treewidth graph $H$ and a path $P$ such that $G\subsetsim H\boxtimes P$ and $\min\{|V(H)|,|V(P)|\} \leq O(\tw(G))$. 
 	
-	Little research has been done studying product structures where the full product has bounded treewidth. In fact, it is even open whether $\min\{V(H)|,|V(P)|\} \leq O(f(\tw(G)))$ for some function $f$, or if $\min\{V(H)|,|V(P)|\} \leq O(\sqrt{|V(G)|})$. The second bound is weaker than the posed question due to the planar separator theorem\cite{LT79}, which states that $\tw(G) \le O(\sqrt{|V(G)|}\})$ for every planar graph $G$.
+	Little research has been done studying product structures where the  product $H\boxtimes P$ has bounded treewidth. In fact, the following weaker upper bounds are also open:
+	\begin{itemize}
+	\item$\min\{V(H)|,|V(P)|\} \leq O(f(\tw(G)))$ for some function $f$, and
+	\item $\min\{V(H)|,|V(P)|\} \leq O(\sqrt{|V(G)|})$\footnote{This bound is weaker than the posed question due to the planar separator theorem\cite{LT79}, which states that $\tw(G) \le O(\sqrt{|V(G)|}\})$ for every planar graph $G$.}
+	\end{itemize} 
+	As such, answering either of these problems would also mark significant progress in the understanding of bounded degree product structure theorems.
+	
+	It should also be noted that solving this problem in any way for the strong product would provide an equivalent bound for the Cartesian product, due to the minor-monotonicity of the treewidth as well as the fact that $H\boxprod P \subsetsim H\boxtimes P$.. 
 	
 	\bibliographystyle{plain}
 	\bibliography{largebib-twgp}

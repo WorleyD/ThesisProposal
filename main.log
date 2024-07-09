@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.10)  9 JUL 2024 14:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.10)  9 JUL 2024 16:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -378,30 +378,22 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ])) [11]
 \openout2 = `ch4/TWGP.aux'.
 
- (ch4/TWGP.tex
-Overfull \hbox (27.74678pt too wide) in paragraph at lines 18--19
-\T1/cmr/m/n/10 product has bounded treewidth. In fact, it is even open whether 
-$[]\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 V\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 H\OT1/
-cmr/m/n/10 )\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 j\OML/cmm/m/i
-t/10 V\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 jg 
-
- []
-
-(ch4/TWGP.bbl)) [12
+ (ch4/TWGP.tex (ch4/TWGP.bbl
+[12
 
 
 
 
-] (main.aux (ch0/intro.aux) (ch1/GridMinorTheorem.aux)
+])) [13] (main.aux (ch0/intro.aux) (ch1/GridMinorTheorem.aux)
 (ch2/TNPlanar.aux) (ch3/EPGTW2.aux) (ch4/TWGP.aux)) ) 
 Here is how much of TeX's memory you used:
- 7891 strings out of 478659
- 137814 string characters out of 2845919
+ 7893 strings out of 478659
+ 137827 string characters out of 2845919
  471351 words of memory out of 3000000
- 25847 multiletter control sequences out of 15000+600000
+ 25849 multiletter control sequences out of 15000+600000
  419250 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,9n,62p,917b,350s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,9n,62p,911b,350s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\Dav_W\AppData\L
 ocal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\Dav_W\App
 Data\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\Dav
@@ -417,23 +409,25 @@ ur/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Dav_W\AppData\Local\MiKTeX\fonts/p
 k/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\Dav_W\AppData\Local\MiKTeX\f
 onts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/Dav_W/AppData/Local/Pro
 grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Dav_W/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Dav_W
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Use
-rs/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb
-><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mmi8.pfb><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmr10.pfb><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmr5.pfb><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmr7.pfb><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Dav_W/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Dav_W/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Dav_W/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users
-/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10
-.pfb>
-Output written on main.pdf (13 pages, 287353 bytes).
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/D
+av_W/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C
+:/Users/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi
+5.pfb><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmmi7.pfb><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmmi8.pfb><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmr10.pfb><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Dav_W/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Dav_W/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Dav_W/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Dav_W/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/D
+av_W/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:
+/Users/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/
+msam10.pfb><C:/Users/Dav_W/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/symbols/msbm10.pfb>
+Output written on main.pdf (14 pages, 309251 bytes).
 PDF statistics:
- 466 PDF objects out of 1000 (max. 8388607)
+ 484 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
