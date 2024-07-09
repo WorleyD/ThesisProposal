@@ -14,4 +14,9 @@
 Vida Dujmović, Pat Morin, David~R. Wood, and David Worley.
 \newblock Grid minors and products, 2024.
 
+\bibitem{LT79}
+Richard~J. Lipton and Robert~E. Tarjan.
+\newblock A separator theorem for planar graphs.
+\newblock {\em SIAM J. Appl. Math.}, 36(2):177--189, 1979.
+
 \end{thebibliography}
