@@ -6,8 +6,7 @@
 	\subsection{Introduction}
 	With the importance of treewidth and the many applications of product structure theory, a natural question is the following: What can the treewidth of a planar graph $G$ tell us about the treewidth of its supergraph of the form $H\boxtimes P$?
 	
-	Finding an upper bound on the treewidth of the product would not only deepen our understanding of the power of product structure theorems, but could lead way to further improvements to them and allow us to embed complicated graph products in even simpler graph products. This has the benefit of improving approximation algorithms 
-	that make use of the product to solve problems on the embedded graph, as many of these algorithms make use of the treewidth to solve problems more efficiently. 
+	Finding an upper bound on the treewidth of the product would not only deepen our understanding of the power of product structure theorems, but could lead way to further improvements to them and allow us to embed complicated graph products in even simpler graph products. This can be of benefit in the design of approximation algorithms that make use of the product to solve problems on the embedded graph, as treewidth is a common subject of fixed parameter tractable approximation algorithms\cite{DH05}.
 	\subsection{Problem 4}
 	  Is it true that for every planar graph $G$, there exists a bounded treewidth graph $H$ and a path $P$ such that $G \subsetsim H\boxtimes P$ and $\tw(H\boxtimes P) \in O(\tw(G))$? 
 	

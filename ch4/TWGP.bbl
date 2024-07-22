@@ -10,6 +10,13 @@
   defined!}#1\relax\fi\fi\fi\fi\fi\fi}
 \begin{thebibliography}{1}
 
+\bibitem{DH05}
+Eric~D. Demaine and MohammadTaghi Hajiaghayi.
+\newblock Graphs excluding a fixed minor have grids as large as treewidth, with
+  combinatorial and algorithmic applications through bidimensionality.
+\newblock In {\em Proc. 16th Annual ACM-SIAM Symp. on Discrete Algorithms (SODA
+  '05)}, pages 682--689. ACM, 2005.
+
 \bibitem{DMWW24}
 Vida Dujmović, Pat Morin, David~R. Wood, and David Worley.
 \newblock Grid minors and products, 2024.
